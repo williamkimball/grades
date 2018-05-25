@@ -33,7 +33,7 @@ for (let i = 0; i < scores.length; i++) {
 
 for (const prop in grades) {
     console.info(`${prop} = ${grades[prop]}`)
-}
+};
 
 console.log(`Lowest score = ${scores.sort()[0]}`);
 console.log(`Highest score = ${scores.sort().reverse()[0]}`);
@@ -44,16 +44,13 @@ for (prop1 in grades) {
     if (currentGradeCount < `${grades[prop1]}`) {
         currentGradeCount = `${grades[prop1]}`;
         currentLetterCount = `${prop1}`;
-    }  
+    };
 } console.log(`Highest number of grades: ${currentLetterCount} with ${currentGradeCount}`)
-}
+};
 
 for (prop1 in grades) {
     if (currentGradeCount > `${grades[prop1]}`) {
         currentGradeCount = `${grades[prop1]}`;
         currentLetterCount = `${prop1}`;
-    }  
-} console.log(`Lowest number of grades: ${currentLetterCount} with ${currentGradeCount}`)
-
-
-
+    };
+} console.log(`Lowest number of grades: ${currentLetterCount} with ${currentGradeCount}`);
